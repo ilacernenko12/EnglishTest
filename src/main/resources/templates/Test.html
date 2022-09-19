@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Album example · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+
+    <style>
+
+        .btn-warning{
+            background-color: #ff9f26;
+        }
+        form{
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 30px;
+            border-bottom-color: yellow;
+        }
+        footer{
+            margin: 0 auto;
+            margin-top: 60px;
+            text-align: center;
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        form{
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">About</h4>
+                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                        <li><a href="#" class="text-white">Like on Facebook</a></li>
+                        <li><a href="#" class="text-white">Email me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <strong>B1 - Intermediate</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+<form method="post" action="/Test">
+    <div class="form-group">
+        <h4>1. It was a casual evening, I ________ a dinner for the whole family when I _________, how tired I really ________</h4>
+        <p>1. Was cooking, was realizing, was</p>
+        <p>2. Was cooking, realized, was (true) </p>
+        <p>3. Cooked, realized, is</p>
+        <p>4. Was cooking, realized, is</p>
+        <input name="q1"  class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>2. It is so dusty here. ________ open the window and let some air in here?</h4>
+    <p>1. Are you going to</p>
+    <p>2. Are you going</p>
+    <p>3. Will you open (true)</p>
+    <p>4. Do you open</p>
+    <div class="form-group">
+        <input name="q2"  class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>3. What is written on this can with olives? – They say, we _______ keep it away from the sun</h4>
+    <p>1. Should (true)</p>
+    <p>2. Must</p>
+    <p>3. Need</p>
+    <p>4. Can</p>
+    <div class="form-group">
+        <input name="q3" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>4. You _______ him with this – No, it’s time _______ start doing things on his own. I don’t think I _____ interfere.</h4>
+    <p>1. ‘d better to help, for him to, should</p>
+    <p>2. ‘d better helping, for him to, should</p>
+    <p>3. ‘d better to help, for him, should</p>
+    <p>4. ‘d better help, for him to, should (true)</p>
+    <div class="form-group">
+        <input name="q4" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>5. It simply _____ be true! There ______ some mistake, I would never do a thing like that! ______ I have a look at the record, there _______ be some details you missed.</h4>
+    <p>1. Can’t, must be, May, might</p>
+    <p>2. Can’t, must be, Can, might (true)</p>
+    <p>3. Can’t, may be, May, might</p>
+    <p>4. Can’t, can be, May, might</p>
+    <div class="form-group">
+        <input name="q5" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>6. I have been living here for about a month and I _______ saying “hello” to any stranger, passing by</h4>
+    <p>1. Used to</p>
+    <p>2. ‘m getting used to</p>
+    <p>3. Usually</p>
+    <p>4. ‘m used to (true)</p>
+    <div class="form-group">
+        <input name="q6" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>7. Your learning would be more productive if you _______ regularly</h4>
+    <p>1. Studied (true)</p>
+    <p>2. Would study</p>
+    <p>3. Had studied</p>
+    <p>4. Was studying</p>
+    <div class="form-group">
+        <input name="q7" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>8. Are you going to help me today with dinner? => He asked ___________</h4>
+    <p>1. Whether we are going to help him today</p>
+    <p>2. if we were going to help him today</p>
+    <p>3. if we are going to help him that day</p>
+    <p>4. if we were going to help him that day (true)</p>
+    <div class="form-group">
+        <input name="q8" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>9. In case you open this kind of visa you can _______ study, nor work</h4>
+    <p>1. Either</p>
+    <p>2. Both</p>
+    <p>3. Neither (true)</p>
+    <div class="form-group">
+        <input name="q9" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>10. She is amazing, _______?</h4>
+    <p>1. Is her?</p>
+    <p>2. Is she?</p>
+    <p>3. Isn’t her?</p>
+    <p>4. Isn’t she? (true)</p>
+    <div class="form-group">
+        <input name="q10" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <button type="submit" class="btn btn-warning">Send your answer</button>
+</form>
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">На главную</a>
+        </p>
+        <p>by Ilya Chernenko</p>
+    </div>
+</footer>
+
+
+<script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

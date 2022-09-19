@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Album example · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+
+    <style>
+
+        .btn-warning{
+            background-color: #ff9f26;
+        }
+        form{
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 30px;
+            border-bottom-color: yellow;
+        }
+        footer{
+            margin: 0 auto;
+            margin-top: 60px;
+            text-align: center;
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        form{
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">About</h4>
+                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                        <li><a href="#" class="text-white">Like on Facebook</a></li>
+                        <li><a href="#" class="text-white">Email me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <strong>B2 - Upper-Intermediate</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+
+
+<form method="post" action="/B2Test">
+    <div class="form-group">
+        <h4>1. Translate the sentence in the pop-up window at 23 seconds.</h4>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/w61Gu1y_lTQ" title="Короткие видео на английском с субтитрами, уроки англ онлайн, Помогаем другу переехать" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <input name="q1"  class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>2. The taxi will be here in a couple of minutes. We …… get ready to go.</h4>
+    <p>1. had better</p>
+    <p>2. would better</p>
+    <p>3. should better</p>
+    <div class="form-group">
+        <input name="q2"  class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>3. The interviewer started off …… me why I wanted the job.</h4>
+    <p>1. to ask</p>
+    <p>2. in asking</p>
+    <p>3. by asking</p>
+    <div class="form-group">
+        <input name="q3" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>4. The stairs …… quite steep, so be careful how you go down.</h4>
+    <p>1. are</p>
+    <p>2. be</p>
+    <p>3. is</p>
+    <div class="form-group">
+        <input name="q4" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>5. “Dad won’t mind us borrowing the car, will he?” “No, I ……”</h4>
+    <p>1. don’t suppose it</p>
+    <p>2. suppose not</p>
+    <p>3. don’t suppose</p>
+    <div class="form-group">
+        <input name="q5" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>6. What does he say in the first 2 seconds?</h4>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/Qmv2qiSlPq8" title="Top Benefits of Freelancing #Shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="form-group">
+        <input name="q6" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>7. We …… to the tennis club since we moved here.</h4>
+    <p>1. have belonged</p>
+    <p>2. are belonging</p>
+    <p>3. belong</p>
+    <div class="form-group">
+        <input name="q7" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>8. Your eyes are red – ……?</h4>
+    <p>1. did you cry</p>
+    <p>2. have you cried</p>
+    <p>3. have you been crying</p>
+    <div class="form-group">
+        <input name="q8" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>9. I don’t know when Helen …… back.</h4>
+    <p>1. will be</p>
+    <p>2. is</p>
+    <p>3. can</p>
+    <div class="form-group">
+        <input name="q9" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>10. I …… an interview because I’d worked there before.</h4>
+    <p>1. needn’t have</p>
+    <p>2. Is she?</p>
+    <p>3. didn’t need to have</p>
+    <p>4. needn’t have had</p>
+    <div class="form-group">
+        <input name="q10" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <button type="submit" class="btn btn-warning">Send your answer</button>
+</form>
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">На главную</a>
+        </p>
+        <p>by Ilya Chernenko</p>
+    </div>
+</footer>
+
+
+<script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

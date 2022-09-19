@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Album example · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+
+    <style>
+
+        .btn-warning{
+            background-color: #ff9f26;
+        }
+        form{
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 30px;
+            border-bottom-color: yellow;
+        }
+        footer{
+            margin: 0 auto;
+            margin-top: 60px;
+            text-align: center;
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        form{
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">About</h4>
+                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                        <li><a href="#" class="text-white">Like on Facebook</a></li>
+                        <li><a href="#" class="text-white">Email me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <strong>A2 - Pre-Intermediate</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+<form method="post" action="/A2Test">
+    <div class="form-group">
+        <h4>1. Read the four sentences given below and choose the one which uses will or won't incorrectly.</h4>
+        <p>1. Today, many entrepreneurs conduct their business operations online. This method of running business will become very popular in the future.</p>
+        <p>2. Mike won't be late because he has already taken a taxi. </p>
+        <p>3. We will move to another city next week because of our boss's job requirements.</p>
+        <p>4. He won't buy an electric car of new design as he trusts new technological progress in the auto-mobile industry. (true)</p>
+        <input name="q1"  class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>2. Read the sentence and add the proper pronoun to make it meaningful.
+        _______were discussing acute global problems when the professor entered the classroom and said to them, “Hello, students!”?</h4>
+    <p>1. he</p>
+    <p>2. they (true)</p>
+    <p>3. we</p>
+    <p>4. I</p>
+    <div class="form-group">
+        <input name="q2"  class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>3. Choose the right word to complete the question starting with 'how'.
+        How _____ is your husband? I know he is a sportsman. He jumps very well.</h4>
+    <p>1. tall (true)</p>
+    <p>2. long</p>
+    <p>3. much</p>
+    <p>4. high</p>
+    <div class="form-group">
+        <input name="q3" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>4. Choose the sentence with the right form of the verb in present perfect tense.</h4>
+    <p>1. I've visited this museum before. (true)</p>
+    <p>2. I've visit this museum before.</p>
+    <p>3. I've visiting this museum before.</p>
+    <p>4. I've been visit this museum before.</p>
+    <div class="form-group">
+        <input name="q4" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>5. Choose the incorrect sentence, paying attention to uncountable nouns.</h4>
+    <p>1. This cake is delicious.</p>
+    <p>2. This water are cold. (true)</p>
+    <p>3. This information is insufficient.</p>
+    <p>4. These books are interesting.</p>
+    <div class="form-group">
+        <input name="q5" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>6. Translate the sentence. </h4>
+    <p>I almost fell asleep during that sentence. Я чуть не заснул, пока слушал это предложение.</p>
+    <div class="form-group">
+        <input name="q6" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>7. Select the necessary articles to complete the sentence below. There are two vehicles in the yard, ____ lorry and ___ car.</h4>
+    <p>1. a … a (true)</p>
+    <p>2. a … the</p>
+    <p>3. the … the</p>
+    <p>4. zero articles</p>
+    <div class="form-group">
+        <input name="q7" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>8. Give order in the following sentence, using/or not using the proper word.
+        There were many soldiers in the hall. All of them were ready to follow their officer's orders. Suddenly, the officer gave the first command, “ _______ turn to the left!”</h4>
+    <p>1. Please</p>
+    <p>2. do</p>
+    <p>3. you</p>
+    <p>4. zero word (true)</p>
+    <div class="form-group">
+        <input name="q8" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>9. Select the appropriate words to complete the dialogue below. Tell me, please, _____ to go to the seaside this summer? Yes, sure. I like the sea, you know.</h4>
+    <p>1. would you like (true)</p>
+    <p>2. do you like</p>
+    <p>3. does you like</p>
+    <p>4. would like</p>
+    <div class="form-group">
+        <input name="q9" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>10. Select the proper word to complete the question given below.
+        _____ saw you in the room? I guess, nobody. That's great!</h4>
+    <p>1. whom</p>
+    <p>2. who (true)</p>
+    <p>3. what</p>
+    <p>4. which</p>
+    <div class="form-group">
+        <input name="q10" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <button type="submit" class="btn btn-warning">Send your answer</button>
+</form>
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">На главную</a>
+        </p>
+        <p>by Ilya Chernenko</p>
+    </div>
+</footer>
+
+
+<script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
