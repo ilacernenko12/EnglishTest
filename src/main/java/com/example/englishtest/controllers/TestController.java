@@ -1,5 +1,6 @@
 package com.example.englishtest.controllers;
 
+import com.example.englishtest.helpers.ResultHelp;
 import com.example.englishtest.models.ResultModel;
 import com.example.englishtest.models.TestOne;
 import com.example.englishtest.repos.ResultRepo;
@@ -12,6 +13,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.view.RedirectView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 @RequestMapping ("/Test")
@@ -36,7 +40,8 @@ public class TestController {
                                       @RequestParam int q7,
                                       @RequestParam int q8,
                                       @RequestParam int q9,
-                                      @RequestParam int q10){
+                                      @RequestParam int q10,
+                                      Model model){
         ResultModel resultModel = new ResultModel();
         TestOne testOne = new TestOne();
         testOne.setQ1(q1);
@@ -86,6 +91,13 @@ public class TestController {
 
         resultModel.setTestResult(count);
         resultRepo.save(resultModel);
+
+        List<ResultModel> resultModels = resultRepo.findAll();
+        List<String> list = new ArrayList<>();
+        for (ResultModel r: resultModels){
+            list.add(String.valueOf(r.getTestResult()));
+        }
+        model.addAttribute("list", list);
 
         if (count>=5){
             return  new RedirectView("/preB2");
