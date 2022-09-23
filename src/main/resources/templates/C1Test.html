@@ -1,10 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Album example · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+
+    <style>
+
+        .btn-warning{
+            background-color: #ff9f26;
+        }
+        form{
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 30px;
+            border-bottom-color: yellow;
+        }
+        footer{
+            margin: 0 auto;
+            margin-top: 60px;
+            text-align: center;
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        form{
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
+
 </head>
 <body>
+
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">About</h4>
+                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                        <li><a href="#" class="text-white">Like on Facebook</a></li>
+                        <li><a href="#" class="text-white">Email me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <strong>С1 - Advance</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+<form method="post" action="/C1Test">
+    <div class="form-group">
+        <h4>1. Find a sentence, in which Passive Voice is used.</h4>
+        <p>1. They don't believe in a successful deal with their new French partners. None of them speak French.</p>
+        <p>2. French is not spoken in this team; therefore, it will be difficult for them to get on the right side of their business partners.</p>
+        <p>3. Unfortunately, their business plan fails to address the needs of their partners in this deal because of the lack of French speaking team members.</p>
+        <p>4. Nobody knows the result of their recent negotiation with French partners. They are not native French speakers.</p>
+        <input name="q1"  class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>2. Choose the right word to complete the sentence below, placing emphasis on ellipsis rule.
+        Hey, dear, you see my cell-phone is out of fashion. I'm going to buy a new one but do you think I should _____?</h4>
+    <p>1. - </p>
+    <p>2. do it</p>
+    <p>3. buy a new cell-phone</p>
+    <p>4. buy it</p>
+    <div class="form-group">
+        <input name="q2"  class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>3.  Choose the proper word to avoid repetition in the following sentence.
+        She really loved his crispy pan fried fish. She asked, “Can I have another ____?”</h4>
+    <p>1. crispy pan fried fish</p>
+    <p>2. one </p>
+    <p>3. fish</p>
+    <p>4. more</p>
+    <div class="form-group">
+        <input name="q3" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>4. Choose the right phrasal verb to make the sentence sound correct.
+        I _______ my kids when we went to the park. I know we must be happy to run, jump, and ride a bike.</h4>
+    <p>1. wore out </p>
+    <p>2. wound up</p>
+    <p>3. checked out</p>
+    <p>4. cheated on</p>
+    <div class="form-group">
+        <input name="q4" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>5. Complete the sentence below.
+        Have they ______ what their kids were doing in the evening yesterday?</h4>
+    <p>1. figured in</p>
+    <p>2. figured out </p>
+    <p>3. figured on</p>
+    <p>4. figured about</p>
+    <div class="form-group">
+        <input name="q5" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>6. Choose the right adverb to complete the sentence below. She is only 3 years old, but she can speak very quickly for her age. That's great! Yes, but our grandma says, “I can't understand your kid. Unfortunately, the girl speaks ______ quickly!”</h4>
+    <p>1. too </p>
+    <p>2. very</p>
+    <p>3. -</p>
+    <p>4. almost</p>
+    <div class="form-group">
+        <input name="q6" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>7. Use the proper word order to create inversion in the sentence below.
+        He is a professional. He offers not only the repairing of cars services, but driving lessons as well.</h4>
+    <p>1. Not only does he offer car repairing services, but driving lessons as well.</p>
+    <p>2. Not only he does he offers car repairing services, but driving lessons as well. </p>
+    <p>3. Not only he offers car repairing services, but driving lessons as well.</p>
+    <p>4. Not only do he offers car repairing services, but driving lessons as well.</p>
+    <div class="form-group">
+        <input name="q7" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>8. Use the proper Future tense in the sentence below.
+        I _________to London at 9 tomorrow morning. I have the ticket I received yesterday from my boss. Say goodbye!</h4>
+    <p>1. will be flying</p>
+    <p>2. am flying </p>
+    <p>3. flying</p>
+    <p>4. am being flying</p>
+    <div class="form-group">
+        <input name="q8" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>9. Complete the sentence below, using the proper verb.
+        I ______ to watch the TV show tonight. They say it will be more interesting this time because they will invite pop stars.</h4>
+    <p>1. am going </p>
+    <p>2. will be going</p>
+    <p>3. going</p>
+    <p>4. will being go</p>
+    <div class="form-group">
+        <input name="q9" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <h4>10. Express intention in the following sentence, using the proper verb.
+        Do you want something to drink? I _____ a coca-cola then.</h4>
+    <p>1. will get</p>
+    <p>2. going to get</p>
+    <p>3. will be getting</p>
+    <p>4. am getting</p>
+    <div class="form-group">
+        <input name="q10" class="form-control" type="text" placeholder="Answer">
+    </div>
+    <button type="submit" class="btn btn-warning">Send your answer</button>
+</form>
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">На главную</a>
+        </p>
+        <p>by Ilya Chernenko</p>
+    </div>
+</footer>
+
+
+<script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
