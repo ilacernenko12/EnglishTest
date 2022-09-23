@@ -19,7 +19,8 @@ import java.util.List;
 
 @Controller
 @RequestMapping ("/Test")
-public class TestController {
+public class  TestController {
+
     @Autowired
     TestOneRepo testOneRepo;
     @Autowired
@@ -92,12 +93,7 @@ public class TestController {
         resultModel.setTestResult(count);
         resultRepo.save(resultModel);
 
-        List<ResultModel> resultModels = resultRepo.findAll();
-        List<String> list = new ArrayList<>();
-        for (ResultModel r: resultModels){
-            list.add(String.valueOf(r.getTestResult()));
-        }
-        model.addAttribute("list", list);
+
 
         if (count>=5){
             return  new RedirectView("/preB2");
