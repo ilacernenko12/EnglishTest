@@ -181,9 +181,11 @@
     </header>
 
     <main class="px-3">
-        <h1>Congratulations!</h1>
-        <p class="lead">You have |сделать баллы| points</p>
-        <p class="lead">Next level: B2 - Upper-Intermediate</p>
+        <h1>Congratulations, |username|!</h1>
+        <div th:each="c:${list}">
+            <p class="lead" th:text="'You have '+ ${c} + '/10 points'"></p>
+            <p class="lead">Next level: B2 - Upper-Intermediate</p>
+        </div>
         <p class="lead">
             <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
         </p>

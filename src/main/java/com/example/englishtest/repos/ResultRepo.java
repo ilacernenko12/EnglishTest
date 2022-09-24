@@ -8,5 +8,4 @@ import java.util.List;
 
 @Repository
 public interface ResultRepo extends JpaRepository<ResultModel, Long> {
-    List<ResultModel> findById (long id);
 }

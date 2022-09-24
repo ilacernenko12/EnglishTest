@@ -19,10 +19,9 @@ public class PreA2Controller {
 
     ResultModel resultModel;
 
-    @GetMapping("/{id}")
-    public String getPreA2(Model model,
-                           @PathVariable long id) throws  Exception{
-        List<ResultModel> resultModels = resultRepo.findById(id);
+    @GetMapping
+    public String getPreA2(Model model)  {
+        List<ResultModel> resultModels = resultRepo.findAll();
         List<String> list = new ArrayList<>();
         for (ResultModel r: resultModels){
             list.add(String.valueOf(r.getTestResult()));
