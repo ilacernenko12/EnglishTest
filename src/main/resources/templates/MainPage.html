@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
-    <title>Cover Template · Bootstrap v5.2</title>
+    <title>English</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
 
@@ -53,15 +53,15 @@
             outline: none;
         }
         .btn-4 {
-            background-color: #4dccc6;
-            background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+            background-color: #000080;
+            background-image: linear-gradient(315deg, #000080, #000080 74%);
             line-height: 42px;
             padding: 0;
             border: none;
         }
         .btn-4:hover{
-            background-color: #89d8d3;
-            background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+            background-color: #000080;
+            background-image: linear-gradient(315deg, #800000 0%, #800000 74%);
         }
         .btn-4 span {
             position: relative;
@@ -171,6 +171,14 @@
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
         }
+        body{
+            background-image: url("https://png.pngtree.com/png-clipart/20200310/ourlarge/pngtree-united-kingdom-flag-transparent-watercolor-painted-brush-png-image_2156573.jpg");
+            background-position-x: 0px;
+            background-position-y: 450px;
+        }
+        h6{
+            color: black;
+        }
     </style>
 
 
@@ -186,21 +194,20 @@
 
     <main class="px-3">
         <h1>Greetings!</h1>
-        <form method="post" action="/MainPage">
-        <div class="form-group">
-            <input name="q3" class="form-control" type="text" placeholder="Enter your name">
-        </div>
-        </form>
         <p class="lead">I suggest taking a test that determines your level of English. The test starts at level B1. Depending on your answers in the first test, other tests will be formed. There are 3 tests in total.</p>
         <h4>Good luck!</h4>
-        <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-        </p>
-        <a href="Test" class="custom-btn btn-4"><span>Start test</span></a>
+        <form method="post" action="/MainPage">
+            <div class="form-group">
+                <input name="q3" class="form-control" type="text" placeholder="Enter your name">
+            </div>
+            <a href="Test"  class="custom-btn btn-4">Start test</a>
+        </form>
     </main>
 
     <footer class="mt-auto text-white-50">
-        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+        <div class="container">
+            <h6>by Ilya Chernenko</h6>
+        </div>
     </footer>
 </div>
 

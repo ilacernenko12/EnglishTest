@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Controller
@@ -19,9 +20,9 @@ public class PreA2Controller {
 
     ResultModel resultModel;
 
-    @GetMapping
-    public String getPreA2(Model model)  {
-        List<ResultModel> resultModels = resultRepo.findAll();
+    @GetMapping("/{id}")
+    public String getPreA2(Model model, @PathVariable long id)  {
+        List<ResultModel> resultModels = Collections.singletonList(resultRepo.findAllById(id));
         List<String> list = new ArrayList<>();
         for (ResultModel r: resultModels){
             list.add(String.valueOf(r.getTestResult()));
